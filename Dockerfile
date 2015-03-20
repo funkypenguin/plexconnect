@@ -1,5 +1,6 @@
-FROM phusion/baseimage:0.9.11
-MAINTAINER needo <needo@superhero.org>
+FROM phusion/baseimage:0.9.16
+MAINTAINER David Young <davidy@funkypenguin.co.nz>
+# Based on the work of needo <needo@superhero.org>
 ENV DEBIAN_FRONTEND noninteractive
 
 # Set correct environment variables

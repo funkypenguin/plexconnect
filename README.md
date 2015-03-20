@@ -1,9 +1,11 @@
 This is a Dockerfile setup for PlexConnect - https://github.com/iBaa/PlexConnect
 
+# Copied from https://github.com/needo37/plexconnect, the only change
+# so far is a bump in phusion/baseimage version
 To run:
 
 ```
-docker run -d --host="name" --name="plexconnect" -v /path/to/plexconnect/ssl:/opt/plexconnect/assets/certificates:rw -v /etc/localtime:/etc/localtime:ro -p 80:80 needo/plexconnect
+docker run -d --host="name" --name="plexconnect" -v /path/to/plexconnect/ssl:/opt/plexconnect/assets/certificates:rw -v /etc/localtime:/etc/localtime:ro -p 80:80 funkypenguin/plexconnect
 ```
 
 FIRST TIME USERS
@@ -26,4 +28,4 @@ Edge
 ----
 If you would like to run the latest updates from the master branch run:
 
-docker run -d --host="name" --name="plexconnect" -v /path/to/plexconnect/ssl:/opt/plexconnect/assets/certificates:rw -v /etc/localtime:/etc/localtime:ro -e EDGE=1 -p 80:80 needo/plexconnect
+docker run -d --host="name" --name="plexconnect" -v /path/to/plexconnect/ssl:/opt/plexconnect/assets/certificates:rw -v /etc/localtime:/etc/localtime:ro -e EDGE=1 -p 80:80 funkypenguin/plexconnect
